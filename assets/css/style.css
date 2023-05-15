@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/assets/img/MATRIX\ SITE\ background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.title-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5vh;
+    position: absolute;
+}
+
+.title-wrap .bar{
+    width: 80vw;
+}
+
+.title-wrap .title{
+    position: absolute;
+    left: 40%;
+    width: 20%;
+}
+
+.enter-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 20;
+}
+
+.enter-wrap .text{
+    width: 30%;
+    margin-top: -20vh;
+    cursor: pointer;
+}
+
+.enter-wrap .bar{
+    width: 40%;
+    margin-top: -1em;
+    cursor: pointer;
+}
+
+.shoot{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.shoot img {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: -5vh;
+}
+
+
+.links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+
+}
+
+.links img{
+    width: 5em;
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        background-repeat: repeat;
+    }
+
+    .title-wrap .bar{
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .title-wrap .title{
+        position: absolute;
+        left: 25%;
+        width: 50%;
+    }
+
+    .enter-wrap .text{
+        width: 80%;
+        margin-top: -30vh;
+    }
+    
+    .enter-wrap .bar{
+        width: 85%;
+        margin-top: 0;
+    }
+
+    .shoot{
+        top: 40vh;
+    }
+
+    .shoot img{
+        width: 120vw;
+        margin-left: -10vw;
+        margin-top: -15vh;
+    }
+}
